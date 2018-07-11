@@ -9,9 +9,8 @@ const user = new User({username, password});
 //const userInfo={username.password};
 user.save((err, user) => {
 	if(err) return res.status(422).send({ message: 'Problem creating new user'});
-	res.json({success: 'Saved', user});
+	res.json({success: 'User Saved', user});
 });
-
 };
 
 
