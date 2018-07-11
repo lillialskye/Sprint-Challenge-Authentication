@@ -5,8 +5,7 @@
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon app.js",
-    
+    "start": "nodemon app.js"
   },
   "repository": {
     "type": "git",
@@ -18,18 +17,13 @@
   "bugs": {
     "url": "https://github.com/LambdaSchool/Sprint-Challenge-Authentication/issues"
   },
-  "homepage": "https://github.com/LambdaSchool/Sprint-Challenge-Authentication#readme",
-   
- 
-  },
-
-  "dependencies": {
+    "dependencies": {
     "bcrypt": "^1.0.3",
     "body-parser": "^1.18.2",
     "cors": "^2.8.4",
     "express": "^4.16.3",
     "jsonwebtoken": "^8.1.0",
     "mongoose": "^4.13.14",
-    "node-fetch": "^1.7.3",
-      }
+    "node-fetch": "^1.7.3"
+  }
 }
