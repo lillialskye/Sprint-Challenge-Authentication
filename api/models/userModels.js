@@ -4,7 +4,7 @@ const Schema = mongoose.Schema;
 
 const SALT_ROUNDS = 11;
 
-const UserSchema = Schema({
+const UserSchema = new Schema({
     // create your user schema here.
 //  done  username: required, unique and lowercase
     // password: required
@@ -33,9 +33,9 @@ UserSchema.pre('Save', function(next) {
   //create a user
 bcrypt.hash(this.password, SALT_ROUNDS, (err, hashedPw => {
  if (err) return next(err);
- this.password = hashedPw;
+ user.password = hashedPw;
  next();
-});
+}));
 });
 
 UserSchema.methods.checkPassword = function(plainTextPW, callBack) {

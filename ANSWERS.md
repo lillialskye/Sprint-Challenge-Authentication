@@ -3,7 +3,7 @@
 1.  Describe Middleware, Sessions (as we know them in express), bcrypt and JWT.
 middleware-application the is the go between the database and application
 
-Sessions- are a way to persist data across requests where eash user/device has a unique session
+Sessions- are a way to persist data across requests where eash user/device has a unique session. For example a shopping cart.
 
 bcrypt-is a way to hash passwords using salting
 
